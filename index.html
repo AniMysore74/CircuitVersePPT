@@ -1,0 +1,61 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license. -->
+<!-- See LICENSE in the project root for license information -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>circuitVersePPT</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.debug.js"></script>
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
+    <link rel="stylesheet" href="node_modules/office-ui-fabric-js/dist/css/fabric.components.css" />
+
+    <!-- CDN -->
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <!--<link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/css/fabric.min.css" />-->
+    <!--<link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/css/fabric.components.min.css" />-->
+
+    <!-- Template styles -->
+    <link href="app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m">
+    <div id ="control-pane">
+        <div class="ms-Grid">
+            <div class="ms-Grid-row">
+                <div id="title" class="ms-Grid-col ms-sm4 ms-md4 ms-lg2">
+                    <span> CircuitVerse Plugin </span>
+                </div>
+                <div class="ms-Grid-col ms-sm4 ms-md4 ms-lg6 ms-textAlignLeft">
+                    <div id='input-box' class="ms-TextField hidden">
+                        <input class="ms-TextField-field" id='circuitID' type="text" value="" placeholder="Enter the circuit ID. eg: 247">
+                    </div>
+                </div>
+                <div class="ms-Grid-col ms-sm4 ms-md4 ms-lg2 ms-textAlignLeft">
+                    <button class="ms-Button ms-Button--primary hidden" id="embed">
+                        <span class="ms-Button-label">Embed</span>
+                    </button>
+                    <button class="ms-Button ms-Button--secondary hidden" id="clear"> 
+                        <span class="ms-Button-label">Clear</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div id="content-main">
+        <div class="padding">
+            <img id = "background" src ='https://circuitverse.org/img/circuitverse_black.svg' >
+        </div>
+    </div>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="node_modules/office-ui-fabric-js/dist/js/fabric.js"></script>
+</body>
+
+</html>
