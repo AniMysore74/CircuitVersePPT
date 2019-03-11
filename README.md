@@ -2,6 +2,7 @@
 
 **Still in testing mode. Currently works for office online**
 
+![](screencapture.gif)
 
 1. Install dependencies with `npm` and then run `npm start`
 2. Add the self signed certificate file `certs/ca.crt` to your system. 
